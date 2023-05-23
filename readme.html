@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+  * {
+  background: #1a1a1a;
+  color: #cacaca;
+}
+.header {
+  font-size: 32px;
+  font-family: Roboto;
+}
+
+.intro {
+  font-size:  17px;
+  font-weight: 500;
+  font-family: Roboto;
+  width: 80%;
+  text-align: justify;
+}
+
+.desc {
+  font-size:  17px;
+  font-weight: 500;
+  font-family: Roboto;
+  width: 80%;
+  text-align: justify;
+}
+
+code {
+  color: #c9ae76;
+}
+
+.files {
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+  font-family: Roboto;
+  border: 1px solid #cacaca;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.files:hover {
+  border: 1px solid #c9ae76;
+  color: #c9ae76;
+  cursor: pointer;
+}
+
+.files-cnt {
+  display: flex;
+}
+
+.files-disp {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 600px;
+}
+
+a {
+  width: 20%;
+  text-decoration: none;
+  margin: 10px 10px 10px 10px;
+}
+a:hover {
+  color: #c9ae76;
+}
+
+.collabs-cnt {
+  display: flex;
+  width: 80%;
+  padding: 10px 10px 10px 10px;
+}
+
+.collabs {
+  height: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3D3D3D;
+}
+
+.collabs:hover {
+  color: #c9ae76;
+  cursor: pointer;
+}</style>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<div class="header">
+  Quantum Random Number Generator
+</div>
+
+<p class="intro">
+  Pseudo Random Number Generators (PRNG) are algorithms that help to create randomness in programs, but they are not truly random like the randomness obtain from physical processes. Quantum Random Number Generator uses a Quantum Computer to generate truly random numbers using fundamental properties of Quantum Physics. 
+</p>
+
+<p class="desc">
+We use IBM Qiskit to create a <code>QuantumCircuit</code>. We create three circuits two with independent <code>RX</code> and <code>RY</code> gates respectively, and one with <code>RX and RY</code> applied together. Therefore we get three values of counts of <code>0's</code> and <code>1's</code> which are ultimately multiplied to get a random number. The <code>shots</code> of each execution are choosen using pusedo-random number generators, built in to Pyhton’s <code>random</code> module.
+</p>
+
+<p class="files-disp">Collaborators</p>
+
+<div class="collabs-cnt">
+  <a style="width: 15%;" href="https://github.com/skushagra/"><div class="collabs"> Kushagra S</div></a>
+</div>
+
+<p class="files-disp">Shared Files</p>
+
+<div class="files-cnt">
+  <a href="https://github.com/skushagra/quantum-random-number-generator/blob/master/generator.ipynb" target="_blank"><div class="files" id="files-1">generator.ipynb</div></a>
+  
+  <a href="https://github.com/skushagra/quantum-random-number-generator/blob/master/README.md" target="_blank"><div class="files">readme.md</div></a>
+</div>
+</body>
+</html>
